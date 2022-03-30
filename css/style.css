@@ -1,0 +1,246 @@
+*{
+    outline: none;
+    box-sizing: border-box;
+    outline: none !important;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    padding: 0;
+    margin: 0;
+    
+}
+
+img {
+    width: 100%;
+}
+section {
+    padding: 60px 0px;
+}
+
+
+.navbar {
+    transition: all .4s linear;
+}
+.navbar-toggler-icon {
+    font-size: 28px;
+}
+.navbar .nav-item {
+    position: relative;
+}
+.navbar .nav-item .nav-link {
+    font-size: 18px;
+    transition: color .4s linear;
+}
+.navbar .nav-item::after{
+    position: absolute;
+    content: "";
+    width: 0%;
+    height: 2px;
+    background-color: var(--mainColor);
+    transition: width .4s linear;
+}
+#custom-switch {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    
+}
+@media screen and (min-width: 540px) {
+    #custom-switch {
+        margin: 15px 0px;
+    }
+  }
+header {
+    width: 100%;
+    height: 95vh;
+    position: relative;
+    clip-path: polygon(0 0, 100% 0, 100% 89%, 0 100%);
+}
+header .text-top {
+    font-size: 18px;
+}
+.about .about-img {
+    position: relative;
+}
+.about .about-img lottie-player {
+    position: absolute;
+    z-index: -11;
+}
+.about .skills .skll-name {
+    text-transform: capitalize;
+    font-size: 18px;
+}
+.progress {
+    height: 23px;
+    margin-top: 3px;
+}
+.progress-bar {
+    text-align: unset;
+    padding: 7px;
+    font-size: 16px;
+}
+.services .icon-bg {
+    width: 75px;
+    height: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 36px;
+}
+.protfolio .card{
+    overflow: hidden;
+    height: 350px;
+    object-fit: cover;
+    object-position: center;
+}
+.protfolio .card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.protfolio .card:hover .over,
+.protfolio .card:hover .over button {
+    opacity: 1;
+    transition: all .4s linear;
+}
+.protfolio .card img {
+    transition: all .4s linear;
+}
+.protfolio .card .over {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition-delay: .3s;
+    transition: all .3s linear;
+}
+.protfolio .card .over button{
+    opacity: 0;
+    transition-delay: .2s;
+    transition: all .2s linear;
+}
+
+.offer .card {
+    position: relative;
+    background-color: transparent;
+}
+.offer .card .over{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 150px;
+    width: 100%;
+    clip-path:fill-box;
+    border-radius: 0px 0px 50% 50%;
+    transition: all .4s linear;
+    z-index: -1;
+}
+.offer .card:hover .over {
+    height: 100%;
+    border-radius: 0px;
+}
+.offer .card .head {
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.offer .card .head span {
+    font-size: 22px;
+}
+.offer .card ul li{
+    background-color: transparent !important;
+    display: flex;
+    align-items: center;
+}
+.offer .card ul li .icon {font-size: 22px;}
+.modal-footer,
+.modal-header{
+    border: none;
+}
+.modal .close:hover{
+    color: red;
+}
+.swiper {
+    margin: 0px auto;
+}
+ .swiper-slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+@media screen and (max-width: 540px) {
+    .testimonial {
+        padding: 90px 0px !important;
+    }
+  }
+.testimonial .card .icon {font-size: 36px;}
+.testimonial .card .clint-name {
+    font-size: 22px;
+}
+.testimonial .card .clint-job {
+    font-size: 18px;
+}
+.list-group-item {
+    background-color: transparent;
+}
+.contact .socail-ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.contact .socail-ul .socail-li {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: var(--mainColor);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contact .socail-ul .socail-li a{
+    color: #eee;
+    text-decoration: none;
+    font-size: 20px;
+}
+.contact .info .list-group-item .icon-bg{
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 20px;
+}
+form label{font-weight: 700;font-size: 16px;}
+.contact .form textarea{
+    resize: none;
+    height: 180px;
+}
+.form-control:focus {
+    border-color: rgba(40, 47, 119,.9) !important;
+    -webkit-box-shadow: 0 0 0 2.5px rgba(40, 47, 119, 0.8) !important;
+    box-shadow: 0 0 0 2.5px rgba(40, 47, 119,.8) !important;
+
+}
+
+
+
+

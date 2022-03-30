@@ -1,0 +1,121 @@
+body {
+  --colorPrimary: #282f77;
+  --colorSecondary: #e4e4e4;
+  --colorLight: #0c0e0ec5;
+  --colorWhite: #0a0000;
+  --colorDark: #fff;
+  background: #fff;
+}
+
+body.dark {
+  --colorPrimary: #5b05d4;
+  --colorSecondary: #1d1d1d;
+  --colorLight: #f2f1f2a2;
+  --colorWhite: #faffff;
+  --colorDark: #121212;
+  background: #121212;
+}
+.btn {
+  box-shadow: none !important;
+}
+.btn-primary {
+  background-color: var(--colorPrimary) !important;
+  border-color: var(--colorPrimary) !important;
+  color: #fff;
+}
+.navbar.active {
+  background-color: var(--colorDark);
+  -webkit-box-shadow: 0 4px 6px 0 rgba(12, 0, 4, 0.1);
+  box-shadow: 0 4px 6px 0 rgba(12, 0, 4, 0.1);
+}
+.dark .navbar.active {
+  background-color: var(--colorSecondary);
+  -webkit-box-shadow: 0 4px 6px 0 rgba(12, 0, 4, 0.1);
+  box-shadow: 0 4px 6px 0 rgba(12, 0, 4, 0.1);
+}
+@media screen and (min-width: 540px) {
+  .navbar.active {
+    background-color: var(--colorDark);
+    -webkit-box-shadow: 0 4px 6px 0 rgba(12, 0, 4, 0.1);
+    box-shadow: 0 4px 6px 0 rgba(12, 0, 4, 0.1);
+  }
+  .dark .navbar.active {
+    background-color: var(--colorSecondary);
+    -webkit-box-shadow: 0 4px 6px 0 rgba(12, 0, 4, 0.1);
+    box-shadow: 0 4px 6px 0 rgba(12, 0, 4, 0.1);
+  }
+}
+#custom-switch {
+  background-color: var(--colorWhite) !important;
+  color: var(--colorSecondary);
+}
+.protfolio .card {
+  border-color: var(--colorDark) !important;
+}
+.section-title,
+.navbar-toggler-icon,
+.navbar .nav-item .nav-link,
+header .header-title,
+.about .h1,
+.services .card-title,
+.offer .card .price,
+.contact .contact-title,
+.contact .info-title,
+.contact .socail-title,
+.testimonial .card .qoute,
+.contact form .form-control,
+.modal-title,
+.close {
+  color: var(--colorWhite) !important;
+}
+.section-desc,
+header .text-top,
+header .header-desc,
+.about p,
+.services .card-desc,
+.offer .card ul li .text,
+.testimonial .card .clint-job,
+.list-group strong,
+.list-group span,
+.contact .contact-desc,
+.about .skills .skll-name {
+  color: var(--colorLight);
+}
+
+.navbar .nav-item:hover .nav-link,
+.testimonial .card .icon,
+.testimonial .card .clint-name,
+.offer .card ul li .icon,
+form label {
+  color: var(--colorPrimary);
+}
+header,
+.modal-content,
+.offer .card .over,
+.swiper-slide .card,
+.progress {
+  background-color: var(--colorSecondary) !important;
+}
+.light .modal-content,
+.swiper-slide .card {
+  background-color: #fff !important;
+}
+.dark .swiper-slide .card {
+  background-color: var(--colorDark) !important;
+}
+.services .icon-bg,
+.progress-bar {
+  background: var(--colorPrimary);
+  color: #fff;
+}
+.contact .socail-ul .socail-li,
+.swiper-pagination-bullet-active,
+.contact .info .list-group-item .icon-bg {
+  background-color: var(--colorPrimary);
+}
+.testimonial {
+  background: var(--colorSecondary);
+}
+svg {
+  fill: var(--colorSecondary);
+}
